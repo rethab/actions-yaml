@@ -8,10 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: '12' # Match version used by runner for Javascript actions https://github.com/actions/runner/blob/main/src/Misc/externals.sh
-      - uses: actions/checkout@v2
+          node-version: '16'
+      - uses: actions/checkout@v3
       - run: npm ci
       - run: npm run format-check
       - run: npm run build
