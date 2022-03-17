@@ -1,5 +1,19 @@
 # actions-yaml
 
+This is my fork of [ericsciple/actions-yaml](https://github.com/ericsciple/actions-yaml).
+The reason I forked it is that that repository is not updated anymore, and I needed a published package with fixes to work on.
+
+You can install this package with:
+
+```bash
+npm install @fusectore/actions-yaml
+```
+
+
+----
+
+_following is the original readme_
+
 ### Summary
 
 Prototype for porting the Actions workflow parser and template expansion library to TypeScript.
