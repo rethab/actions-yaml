@@ -86,6 +86,22 @@
                                 "col": 14,
                                 "lit": "echo hi"
                               }
+                            },
+                            {
+                              "key": {
+                                "type": 0,
+                                "file": 1,
+                                "line": 6,
+                                "col": 9,
+                                "lit": "if"
+                              },
+                              "value": {
+                                "type": 0,
+                                "file": 1,
+                                "line": 6,
+                                "col": 13,
+                                "lit": "false"
+                              }
                             }
                           ]
                         }

@@ -111,7 +111,7 @@ export class YamlObjectReader implements ObjectReader {
   ) {
     const value = token.value
 
-    if (!value) {
+    if (!value && value !== false) {
       return new NullToken(fileId, line, col)
     }
 
