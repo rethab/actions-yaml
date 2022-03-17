@@ -3,6 +3,7 @@ on:
     branches:
       - main
   pull_request:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,3 +17,7 @@ jobs:
       - run: npm run build
       - run: npm run lint
       - run: npm run test
+      - run: npx semantic-release
+        if: $GITHUB_REF == refs/heads/main
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}

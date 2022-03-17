@@ -1,6 +1,6 @@
 {
-  "name": "actions-yaml",
-  "version": "0.1.0",
+  "name": "@fusectore/actions-yaml",
+  "version": "0.0.0-development",
   "description": "",
   "scripts": {
     "build": "tsc && cp workflows/workflow-schema.json dist/workflows/",
@@ -12,16 +12,24 @@
     "all": "npm run format && npm run build && npm run lint && ./test/test.sh",
     "release": "./misc/release.sh"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ericsciple/actions-yaml.git"
+    "url": "git+https://github.com/rethab/actions-yaml.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ericsciple/actions-yaml/issues"
+    "url": "https://github.com/rethab/actions-yaml/issues"
   },
-  "homepage": "https://github.com/ericsciple/actions-yaml#readme",
+  "homepage": "https://github.com/rethab/actions-yaml#readme",
   "dependencies": {
     "yaml": "^2.0.0-8",
     "yargs": "^17.2"
